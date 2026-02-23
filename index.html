@@ -70,7 +70,6 @@
     border-radius: 8px;
     padding: 4px;
   }
-
   nav button {
     background: none;
     border: none;
@@ -145,222 +144,56 @@
     max-width: 560px;
     width: 100%;
   }
-  .modal h2 {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 900;
-    font-size: 1.5rem;
-    letter-spacing: 0.04em;
-    color: var(--accent);
-    margin-bottom: 6px;
-  }
+  .modal h2 { font-family: 'Barlow Condensed', sans-serif; font-weight: 900; font-size: 1.5rem; color: var(--accent); margin-bottom: 6px; }
   .modal .subtitle { color: var(--muted); font-size: 0.87rem; margin-bottom: 24px; line-height: 1.5; }
-
   .step { display: flex; gap: 14px; margin-bottom: 22px; align-items: flex-start; }
-  .step-num {
-    background: var(--accent2);
-    color: white;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 900;
-    font-size: 0.9rem;
-    width: 28px; height: 28px;
-    border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    flex-shrink: 0;
-    margin-top: 2px;
-  }
+  .step-num { background: var(--accent2); color: white; font-family: 'Barlow Condensed', sans-serif; font-weight: 900; font-size: 0.9rem; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
   .step-content { flex: 1; }
   .step-content strong { display: block; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1rem; color: var(--text); margin-bottom: 5px; }
   .step-content p { font-size: 0.84rem; color: var(--muted); line-height: 1.55; }
   .step-content a { color: var(--accent); text-decoration: none; }
-  .step-content a:hover { text-decoration: underline; }
-
-  .code-block {
-    background: rgba(0,0,0,0.45);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 12px 14px;
-    margin-top: 10px;
-    font-family: 'Courier New', monospace;
-    font-size: 0.72rem;
-    color: #90e0ef;
-    white-space: pre;
-    overflow-x: auto;
-    line-height: 1.65;
-  }
-  .copy-btn {
-    margin-top: 8px;
-    background: none;
-    border: 1px solid var(--border);
-    color: var(--muted);
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 600;
-    font-size: 0.78rem;
-    padding: 6px 14px;
-    border-radius: 6px;
-    cursor: pointer;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    transition: all 0.2s;
-  }
-  .copy-btn:hover { border-color: var(--accent); color: var(--accent); }
-
+  .code-block { background: rgba(0,0,0,0.45); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; margin-top: 10px; font-family: 'Courier New', monospace; font-size: 0.72rem; color: #90e0ef; white-space: pre; overflow-x: auto; line-height: 1.65; }
+  .copy-btn { margin-top: 8px; background: none; border: 1px solid var(--border); color: var(--muted); font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 0.78rem; padding: 6px 14px; border-radius: 6px; cursor: pointer; letter-spacing: 0.05em; text-transform: uppercase; }
   .url-input-row { display: flex; gap: 8px; margin-top: 12px; }
-  .url-input-row input {
-    flex: 1;
-    background: rgba(0,0,0,0.3);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    color: var(--text);
-    font-family: 'Barlow', sans-serif;
-    font-size: 0.88rem;
-    padding: 10px 14px;
-    outline: none;
-  }
+  .url-input-row input { flex: 1; background: rgba(0,0,0,0.3); border: 1px solid var(--border); border-radius: 8px; color: var(--text); font-family: 'Barlow', sans-serif; font-size: 0.88rem; padding: 10px 14px; outline: none; }
   .url-input-row input:focus { border-color: var(--accent); }
   .url-input-row input::placeholder { color: var(--muted); font-size: 0.78rem; }
-  .save-url-btn {
-    background: var(--accent);
-    border: none;
-    border-radius: 8px;
-    color: var(--navy);
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 800;
-    font-size: 0.9rem;
-    padding: 10px 18px;
-    cursor: pointer;
-    letter-spacing: 0.04em;
-    white-space: nowrap;
-  }
-  .modal-close {
-    background: none;
-    border: 1px solid var(--border);
-    color: var(--muted);
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 600;
-    font-size: 0.85rem;
-    padding: 10px 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-top: 20px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    transition: all 0.2s;
-  }
-  .modal-close:hover { border-color: var(--accent); color: var(--accent); }
+  .save-url-btn { background: var(--accent); border: none; border-radius: 8px; color: var(--navy); font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 0.9rem; padding: 10px 18px; cursor: pointer; white-space: nowrap; }
+  .modal-close { background: none; border: 1px solid var(--border); color: var(--muted); font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 0.85rem; padding: 10px 20px; border-radius: 8px; cursor: pointer; margin-top: 20px; letter-spacing: 0.05em; text-transform: uppercase; }
 
   /* VIEWS */
   .view { display: none; padding: 20px; max-width: 680px; margin: 0 auto; }
   .view.active { display: block; }
 
-  .form-section {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 20px;
-    margin-bottom: 16px;
-  }
-  .section-title {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 700;
-    font-size: 0.75rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 16px;
-    display: flex; align-items: center; gap: 8px;
-  }
+  .form-section { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin-bottom: 16px; }
+  .section-title { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
   .section-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
 
   .field { margin-bottom: 16px; }
   .field:last-child { margin-bottom: 0; }
 
-  label {
-    display: block;
-    font-size: 0.8rem;
-    font-weight: 500;
-    color: var(--muted);
-    margin-bottom: 6px;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
+  label { display: block; font-size: 0.8rem; font-weight: 500; color: var(--muted); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.05em; }
 
   input[type="date"], input[type="text"], input[type="number"], select {
-    width: 100%;
-    background: rgba(0,0,0,0.3);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    color: var(--text);
-    font-family: 'Barlow', sans-serif;
-    font-size: 1rem;
-    padding: 10px 14px;
-    outline: none;
-    transition: border-color 0.2s;
-    appearance: none;
+    width: 100%; background: rgba(0,0,0,0.3); border: 1px solid var(--border); border-radius: 8px; color: var(--text); font-family: 'Barlow', sans-serif; font-size: 1rem; padding: 10px 14px; outline: none; transition: border-color 0.2s; appearance: none;
   }
   input:focus, select:focus { border-color: var(--accent); }
-
-  textarea {
-    width: 100%;
-    background: rgba(0,0,0,0.3);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    color: var(--text);
-    font-family: 'Barlow', sans-serif;
-    font-size: 1rem;
-    padding: 10px 14px;
-    outline: none;
-    transition: border-color 0.2s;
-    resize: vertical;
-  }
+  textarea { width: 100%; background: rgba(0,0,0,0.3); border: 1px solid var(--border); border-radius: 8px; color: var(--text); font-family: 'Barlow', sans-serif; font-size: 1rem; padding: 10px 14px; outline: none; transition: border-color 0.2s; resize: vertical; }
   textarea:focus { border-color: var(--accent); }
 
   .chip-group { display: flex; flex-wrap: wrap; gap: 8px; }
   .chip-group label { margin: 0; text-transform: none; letter-spacing: 0; font-size: 0.9rem; }
   .chip input { display: none; }
-  .chip span {
-    display: inline-block;
-    padding: 7px 14px;
-    border-radius: 20px;
-    border: 1px solid var(--border);
-    background: rgba(0,0,0,0.2);
-    cursor: pointer;
-    font-size: 0.85rem;
-    color: var(--muted);
-    transition: all 0.15s;
-    user-select: none;
-  }
+  .chip span { display: inline-block; padding: 7px 14px; border-radius: 20px; border: 1px solid var(--border); background: rgba(0,0,0,0.2); cursor: pointer; font-size: 0.85rem; color: var(--muted); transition: all 0.15s; user-select: none; }
   .chip input:checked + span { background: var(--accent); border-color: var(--accent); color: var(--navy); font-weight: 600; }
 
   .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 
-  .submit-btn {
-    width: 100%;
-    background: linear-gradient(135deg, var(--accent2), var(--accent));
-    border: none;
-    border-radius: 10px;
-    color: var(--navy);
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 900;
-    font-size: 1.1rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    padding: 16px;
-    cursor: pointer;
-    transition: opacity 0.2s, transform 0.1s;
-    margin-top: 8px;
-  }
+  .submit-btn { width: 100%; background: linear-gradient(135deg, var(--accent2), var(--accent)); border: none; border-radius: 10px; color: var(--navy); font-family: 'Barlow Condensed', sans-serif; font-weight: 900; font-size: 1.1rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 16px; cursor: pointer; transition: opacity 0.2s, transform 0.1s; margin-top: 8px; }
   .submit-btn:active { transform: scale(0.98); opacity: 0.9; }
   .submit-btn:disabled { opacity: 0.55; cursor: not-allowed; transform: none; }
 
-  .sync-indicator {
-    display: flex; align-items: center; gap: 8px;
-    justify-content: center;
-    margin-top: 10px;
-    font-size: 0.82rem;
-    color: var(--muted);
-    min-height: 22px;
-    transition: color 0.3s;
-  }
+  .sync-indicator { display: flex; align-items: center; gap: 8px; justify-content: center; margin-top: 10px; font-size: 0.82rem; color: var(--muted); min-height: 22px; }
   .sync-indicator.syncing { color: var(--accent); }
   .sync-indicator.synced { color: var(--green); }
   .sync-indicator.error { color: #e76f51; }
@@ -368,74 +201,45 @@
   @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.25} }
   .pulse { animation: pulse 1s infinite; }
 
-  .success-toast {
-    position: fixed;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%) translateY(100px);
-    background: var(--accent);
-    color: var(--navy);
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
-    padding: 12px 28px;
-    border-radius: 30px;
-    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-    z-index: 999;
-    letter-spacing: 0.05em;
-    pointer-events: none;
-  }
+  .success-toast { position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%) translateY(100px); background: var(--accent); color: var(--navy); font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1rem; padding: 12px 28px; border-radius: 30px; transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); z-index: 999; letter-spacing: 0.05em; pointer-events: none; }
   .success-toast.show { transform: translateX(-50%) translateY(0); }
 
+  /* TABLE */
   .table-wrap { overflow-x: auto; border-radius: 12px; border: 1px solid var(--border); }
   table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
-  th {
-    background: var(--mid);
-    color: var(--accent);
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 700;
-    font-size: 0.72rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    padding: 10px 12px;
-    text-align: left;
-    white-space: nowrap;
-  }
+  th { background: var(--mid); color: var(--accent); font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 10px 12px; text-align: left; white-space: nowrap; }
   td { padding: 9px 12px; border-top: 1px solid var(--border); color: var(--text); white-space: nowrap; max-width: 180px; overflow: hidden; text-overflow: ellipsis; }
   tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
   tr:hover td { background: rgba(0,180,216,0.07); }
+
+  .loading-state { text-align: center; padding: 50px 20px; color: var(--muted); }
+  .loading-state .spinner { width: 32px; height: 32px; border: 3px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto 16px; }
+  @keyframes spin { to { transform: rotate(360deg); } }
 
   .empty-state { text-align: center; padding: 60px 20px; color: var(--muted); }
   .empty-state .icon { font-size: 3rem; margin-bottom: 12px; }
   .empty-state p { font-size: 0.9rem; line-height: 1.6; }
 
-  .toolbar { display: flex; justify-content: flex-end; margin-bottom: 12px; }
-  .export-btn {
-    background: none;
-    border: 1px solid var(--border);
-    color: var(--muted);
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 600;
-    font-size: 0.8rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    padding: 8px 16px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all 0.2s;
-  }
+  .toolbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+  .toolbar-right { display: flex; gap: 8px; }
+  .export-btn { background: none; border: 1px solid var(--border); color: var(--muted); font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; padding: 8px 16px; border-radius: 6px; cursor: pointer; transition: all 0.2s; }
   .export-btn:hover { border-color: var(--accent); color: var(--accent); }
+  .refresh-btn { background: none; border: 1px solid var(--border); color: var(--muted); font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; padding: 8px 14px; border-radius: 6px; cursor: pointer; transition: all 0.2s; }
+  .refresh-btn:hover { border-color: var(--accent); color: var(--accent); }
 
   .delete-btn { background: none; border: none; color: var(--muted); cursor: pointer; font-size: 1rem; padding: 4px; transition: color 0.2s; }
   .delete-btn:hover { color: #e63946; }
 
+  /* CHARTS */
   .stats-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 16px; }
   .stat-box { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px; text-align: center; }
   .stat-box .val { font-family: 'Barlow Condensed', sans-serif; font-weight: 900; font-size: 1.8rem; color: var(--accent); }
   .stat-box .lbl { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-top: 2px; }
-
   .chart-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin-bottom: 16px; }
   .chart-title { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin-bottom: 16px; }
+
+  .no-sheets-notice { background: rgba(231,111,81,0.1); border: 1px solid rgba(231,111,81,0.3); border-radius: 10px; padding: 16px 20px; margin-bottom: 16px; font-size: 0.88rem; color: #e8d5d0; line-height: 1.5; }
+  .no-sheets-notice strong { color: #e76f51; }
 </style>
 </head>
 <body>
@@ -458,7 +262,7 @@
 <div class="modal-overlay" id="modal">
   <div class="modal">
     <h2>Connect Google Sheets</h2>
-    <p class="subtitle">Takes about 3 minutes. Every session you log will automatically appear as a new row in your Google Sheet — accessible from your phone, laptop, anywhere.</p>
+    <p class="subtitle">Every session you log will appear as a row in your Google Sheet and sync across all your devices automatically.</p>
 
     <div class="step">
       <div class="step-num">1</div>
@@ -471,8 +275,8 @@
     <div class="step">
       <div class="step-num">2</div>
       <div class="step-content">
-        <strong>Open the Apps Script editor</strong>
-        <p>In your sheet click <b>Extensions → Apps Script</b>. Delete any existing code and paste this script:</p>
+        <strong>Open Apps Script and paste this code</strong>
+        <p>In your sheet click <b>Extensions → Apps Script</b>. Delete any existing code and paste this:</p>
         <div class="code-block" id="script-code">const SHEET_NAME = "Sessions";
 
 function doPost(e) {
@@ -483,15 +287,27 @@ function doPost(e) {
     sheet.appendRow([
       "Date","Venue","Hours","Wind","Sea","Focus",
       "Main","Jib","Kite","Boat","Board","Mast",
-      "Shrouds","Luff Wire","Jib Wire","Comments","Logged At"
+      "Shrouds","Luff Wire","Jib Wire","Comments",
+      "Logged At","ID"
     ]);
   }
   const d = JSON.parse(e.postData.contents);
+  if (d.action === 'delete') {
+    const rows = sheet.getDataRange().getValues();
+    for (let i = 1; i < rows.length; i++) {
+      if (String(rows[i][17]) === String(d.id)) {
+        sheet.deleteRow(i + 1); break;
+      }
+    }
+    return ContentService
+      .createTextOutput(JSON.stringify({result:"deleted"}))
+      .setMimeType(ContentService.MimeType.JSON);
+  }
   sheet.appendRow([
     d.date, d.venue, d.hours, d.wind, d.sea,
     d.focus, d.main, d.jib, d.kite, d.boat,
     d.board, d.mast, d.shrouds, d.luffwire,
-    d.jibwire, d.comments, new Date().toISOString()
+    d.jibwire, d.comments, new Date().toISOString(), d.id
   ]);
   return ContentService
     .createTextOutput(JSON.stringify({result:"success"}))
@@ -499,8 +315,32 @@ function doPost(e) {
 }
 
 function doGet() {
+  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  const sheet = ss.getSheetByName(SHEET_NAME);
+  if (!sheet) return ContentService
+    .createTextOutput(JSON.stringify({entries:[]}))
+    .setMimeType(ContentService.MimeType.JSON);
+  const rows = sheet.getDataRange().getValues();
+  const entries = [];
+  for (let i = 1; i < rows.length; i++) {
+    const r = rows[i];
+    if (!r[0]) continue;
+    entries.push({
+      date: r[0] ? Utilities.formatDate(
+        new Date(r[0]),
+        Session.getScriptTimeZone(),
+        "yyyy-MM-dd") : '',
+      venue:r[1]||'', hours:r[2]||'', wind:r[3]||'',
+      sea:r[4]||'', focus:r[5]||'', main:r[6]||'',
+      jib:r[7]||'', kite:r[8]||'', boat:r[9]||'',
+      board:r[10]||'', mast:r[11]||'', shrouds:r[12]||'',
+      luffwire:r[13]||'', jibwire:r[14]||'',
+      comments:r[15]||'', id:r[17]||String(i)
+    });
+  }
+  entries.reverse();
   return ContentService
-    .createTextOutput(JSON.stringify({status:"ok"}))
+    .createTextOutput(JSON.stringify({entries}))
     .setMimeType(ContentService.MimeType.JSON);
 }</div>
         <button class="copy-btn" onclick="copyScript()">📋 Copy Script</button>
@@ -511,7 +351,7 @@ function doGet() {
       <div class="step-num">3</div>
       <div class="step-content">
         <strong>Deploy as a Web App</strong>
-        <p>Click <b>Deploy → New deployment</b>. Set type to <b>Web app</b>. Set "Execute as" → <b>Me</b> and "Who has access" → <b>Anyone</b>. Click Deploy and approve the permissions when prompted.</p>
+        <p>Click <b>Deploy → New deployment</b>. Type: <b>Web app</b>. Execute as: <b>Me</b>. Who has access: <b>Anyone</b>. Click Deploy and approve permissions.</p>
       </div>
     </div>
 
@@ -519,7 +359,6 @@ function doGet() {
       <div class="step-num">4</div>
       <div class="step-content">
         <strong>Paste your Web App URL here</strong>
-        <p>Copy the Web App URL shown after deployment and paste it below:</p>
         <div class="url-input-row">
           <input type="text" id="sheets-url-input" placeholder="https://script.google.com/macros/s/...">
           <button class="save-url-btn" onclick="saveSheetUrl()">Save</button>
@@ -534,23 +373,13 @@ function doGet() {
 <!-- LOG FORM -->
 <div id="view-form" class="view active">
   <form id="kitForm">
-
     <div class="form-section">
       <div class="section-title">Session Info</div>
       <div class="two-col">
-        <div class="field">
-          <label>Date</label>
-          <input type="date" id="f-date" required>
-        </div>
-        <div class="field">
-          <label>Total Hours</label>
-          <input type="number" id="f-hours" min="0" max="24" step="0.5" placeholder="e.g. 3.5">
-        </div>
+        <div class="field"><label>Date</label><input type="date" id="f-date" required></div>
+        <div class="field"><label>Total Hours</label><input type="number" id="f-hours" min="0" max="24" step="0.5" placeholder="e.g. 3.5"></div>
       </div>
-      <div class="field">
-        <label>Venue</label>
-        <input type="text" id="f-venue" placeholder="e.g. Cowes, Solent">
-      </div>
+      <div class="field"><label>Venue</label><input type="text" id="f-venue" placeholder="e.g. Cowes, Solent"></div>
     </div>
 
     <div class="form-section">
@@ -587,42 +416,23 @@ function doGet() {
 
     <div class="form-section">
       <div class="section-title">Sails</div>
-      <div class="field">
-        <label>Main</label>
-        <select id="f-main">
-          <option value="">— Select —</option>
-          <option>A</option><option>B</option><option>C</option><option>D</option><option>E</option><option>F</option><option>G</option><option>H</option><option>I</option><option>J</option><option>K</option><option>L</option><option>M</option><option>N</option><option>O</option><option>P</option><option>Q</option><option>R</option><option>S</option><option>T</option><option>U</option><option>V</option><option>W</option><option>X</option><option>Y</option><option>Z</option>
-        </select>
+      <div class="field"><label>Main</label>
+        <select id="f-main"><option value="">— Select —</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option><option>F</option><option>G</option><option>H</option><option>I</option><option>J</option><option>K</option><option>L</option><option>M</option><option>N</option><option>O</option><option>P</option><option>Q</option><option>R</option><option>S</option><option>T</option><option>U</option><option>V</option><option>W</option><option>X</option><option>Y</option><option>Z</option></select>
       </div>
-      <div class="field">
-        <label>Jib</label>
-        <select id="f-jib">
-          <option value="">— Select —</option>
-          <option>A</option><option>B</option><option>C</option><option>D</option><option>E</option><option>F</option><option>G</option><option>H</option><option>I</option><option>J</option><option>K</option><option>L</option><option>M</option><option>N</option><option>O</option><option>P</option><option>Q</option><option>R</option><option>S</option><option>T</option><option>U</option><option>V</option><option>W</option><option>X</option><option>Y</option><option>Z</option>
-        </select>
+      <div class="field"><label>Jib</label>
+        <select id="f-jib"><option value="">— Select —</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option><option>F</option><option>G</option><option>H</option><option>I</option><option>J</option><option>K</option><option>L</option><option>M</option><option>N</option><option>O</option><option>P</option><option>Q</option><option>R</option><option>S</option><option>T</option><option>U</option><option>V</option><option>W</option><option>X</option><option>Y</option><option>Z</option></select>
       </div>
-      <div class="field">
-        <label>Kite</label>
-        <select id="f-kite">
-          <option value="">— Select —</option>
-          <option>A</option><option>B</option><option>C</option><option>D</option><option>E</option><option>F</option><option>G</option><option>H</option><option>I</option><option>J</option><option>K</option><option>L</option><option>M</option><option>N</option><option>O</option><option>P</option><option>Q</option><option>R</option><option>S</option><option>T</option><option>U</option><option>V</option><option>W</option><option>X</option><option>Y</option><option>Z</option>
-        </select>
+      <div class="field"><label>Kite</label>
+        <select id="f-kite"><option value="">— Select —</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option><option>F</option><option>G</option><option>H</option><option>I</option><option>J</option><option>K</option><option>L</option><option>M</option><option>N</option><option>O</option><option>P</option><option>Q</option><option>R</option><option>S</option><option>T</option><option>U</option><option>V</option><option>W</option><option>X</option><option>Y</option><option>Z</option></select>
       </div>
     </div>
 
     <div class="form-section">
       <div class="section-title">Equipment</div>
       <div class="two-col">
-        <div class="field">
-          <label>Boat</label>
-          <input type="text" id="f-boat" placeholder="The Dame">
-        </div>
-        <div class="field">
-          <label>Board</label>
-          <select id="f-board">
-            <option value="">— Select —</option>
-            <option>A</option><option>B</option><option>C</option><option>D</option><option>E</option><option>F</option><option>G</option><option>H</option><option>I</option><option>J</option><option>K</option><option>L</option><option>M</option><option>N</option><option>O</option><option>P</option><option>Q</option><option>R</option><option>S</option><option>T</option><option>U</option><option>V</option><option>W</option><option>X</option><option>Y</option><option>Z</option>
-          </select>
+        <div class="field"><label>Boat</label><input type="text" id="f-boat" placeholder="The Dame"></div>
+        <div class="field"><label>Board</label>
+          <select id="f-board"><option value="">— Select —</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option><option>F</option><option>G</option><option>H</option><option>I</option><option>J</option><option>K</option><option>L</option><option>M</option><option>N</option><option>O</option><option>P</option><option>Q</option><option>R</option><option>S</option><option>T</option><option>U</option><option>V</option><option>W</option><option>X</option><option>Y</option><option>Z</option></select>
         </div>
       </div>
     </div>
@@ -630,43 +440,24 @@ function doGet() {
     <div class="form-section">
       <div class="section-title">Rigging</div>
       <div class="two-col">
-        <div class="field">
-          <label>Mast</label>
-          <select id="f-mast">
-            <option value="">— Select —</option>
-            <option>HD1</option><option>HD2</option><option>HD3</option><option>HD4</option><option>HD5</option><option>HD6</option><option>HD7</option><option>HD8</option><option>HD9</option><option>HD10</option><option>HD11</option><option>HD12</option><option>HD13</option><option>HD14</option><option>HD15</option>
-          </select>
+        <div class="field"><label>Mast</label>
+          <select id="f-mast"><option value="">— Select —</option><option>HD1</option><option>HD2</option><option>HD3</option><option>HD4</option><option>HD5</option><option>HD6</option><option>HD7</option><option>HD8</option><option>HD9</option><option>HD10</option><option>HD11</option><option>HD12</option><option>HD13</option><option>HD14</option><option>HD15</option></select>
         </div>
-        <div class="field">
-          <label>Shrouds</label>
-          <select id="f-shrouds">
-            <option value="">— Select —</option>
-            <option>HD1</option><option>HD2</option><option>HD3</option><option>HD4</option><option>HD5</option><option>HD6</option><option>HD7</option><option>HD8</option><option>HD9</option><option>HD10</option><option>HD11</option><option>HD12</option><option>HD13</option><option>HD14</option><option>HD15</option>
-          </select>
+        <div class="field"><label>Shrouds</label>
+          <select id="f-shrouds"><option value="">— Select —</option><option>HD1</option><option>HD2</option><option>HD3</option><option>HD4</option><option>HD5</option><option>HD6</option><option>HD7</option><option>HD8</option><option>HD9</option><option>HD10</option><option>HD11</option><option>HD12</option><option>HD13</option><option>HD14</option><option>HD15</option></select>
         </div>
-        <div class="field">
-          <label>Luff Wire</label>
-          <select id="f-luffwire">
-            <option value="">— Select —</option>
-            <option>HD1</option><option>HD2</option><option>HD3</option><option>HD4</option><option>HD5</option><option>HD6</option><option>HD7</option><option>HD8</option><option>HD9</option><option>HD10</option><option>HD11</option><option>HD12</option><option>HD13</option><option>HD14</option><option>HD15</option>
-          </select>
+        <div class="field"><label>Luff Wire</label>
+          <select id="f-luffwire"><option value="">— Select —</option><option>HD1</option><option>HD2</option><option>HD3</option><option>HD4</option><option>HD5</option><option>HD6</option><option>HD7</option><option>HD8</option><option>HD9</option><option>HD10</option><option>HD11</option><option>HD12</option><option>HD13</option><option>HD14</option><option>HD15</option></select>
         </div>
-        <div class="field">
-          <label>Jib Wire</label>
-          <select id="f-jibwire">
-            <option value="">— Select —</option>
-            <option>HD1</option><option>HD2</option><option>HD3</option><option>HD4</option><option>HD5</option><option>HD6</option><option>HD7</option><option>HD8</option><option>HD9</option><option>HD10</option><option>HD11</option><option>HD12</option><option>HD13</option><option>HD14</option><option>HD15</option>
-          </select>
+        <div class="field"><label>Jib Wire</label>
+          <select id="f-jibwire"><option value="">— Select —</option><option>HD1</option><option>HD2</option><option>HD3</option><option>HD4</option><option>HD5</option><option>HD6</option><option>HD7</option><option>HD8</option><option>HD9</option><option>HD10</option><option>HD11</option><option>HD12</option><option>HD13</option><option>HD14</option><option>HD15</option></select>
         </div>
       </div>
     </div>
 
     <div class="form-section">
       <div class="section-title">Notes</div>
-      <div class="field">
-        <label>Comments</label>
-        <textarea id="f-comments" rows="4" placeholder="Session notes, observations, tuning changes..."></textarea>
-      </div>
+      <div class="field"><label>Comments</label><textarea id="f-comments" rows="4" placeholder="Session notes, observations, tuning changes..."></textarea></div>
     </div>
 
     <button type="submit" class="submit-btn" id="submit-btn">⚓ Log Session</button>
@@ -677,13 +468,17 @@ function doGet() {
 <!-- TABLE -->
 <div id="view-table" class="view">
   <div class="toolbar">
-    <button class="export-btn" onclick="exportCSV()">Export CSV</button>
+    <button class="refresh-btn" onclick="refreshData('table')">↻ Refresh</button>
+    <div class="toolbar-right">
+      <button class="export-btn" onclick="exportCSV()">Export CSV</button>
+    </div>
   </div>
   <div id="table-container"></div>
 </div>
 
 <!-- CHARTS -->
 <div id="view-charts" class="view">
+  <button class="refresh-btn" style="margin-bottom:12px;" onclick="refreshData('charts')">↻ Refresh</button>
   <div id="stats-row" class="stats-row"></div>
   <div class="chart-card"><div class="chart-title">Hours on the Water</div><canvas id="chartHours" height="200"></canvas></div>
   <div class="chart-card"><div class="chart-title">Wind Conditions</div><canvas id="chartWind" height="220"></canvas></div>
@@ -698,26 +493,26 @@ function doGet() {
 <div class="success-toast" id="toast">✓ Session Logged!</div>
 
 <script>
-const STORE_KEY = 'sailing_kit_log_v1';
-const SHEETS_KEY = 'sailing_sheets_url';
-let entries = [];
+const SHEETS_KEY = 'sailing_sheets_url_v2';
 let sheetsUrl = '';
+let entries = [];
 
-async function load() {
-  try { const r = await window.storage.get(STORE_KEY); if (r?.value) entries = JSON.parse(r.value); } catch(e) { entries = []; }
+// ── Storage ──────────────────────────────────────────────
+async function loadUrl() {
   try { const r = await window.storage.get(SHEETS_KEY); if (r?.value) sheetsUrl = r.value; } catch(e) {}
 }
-async function save() {
-  try { await window.storage.set(STORE_KEY, JSON.stringify(entries)); } catch(e) {}
+async function saveUrl() {
+  try { await window.storage.set(SHEETS_KEY, sheetsUrl); } catch(e) {}
 }
 
+// ── Banner ────────────────────────────────────────────────
 function updateBanner() {
   const banner = document.getElementById('setup-banner');
-  const text = document.getElementById('banner-text');
-  const btn = document.getElementById('banner-btn');
+  const text   = document.getElementById('banner-text');
+  const btn    = document.getElementById('banner-btn');
   if (sheetsUrl) {
     banner.classList.add('connected');
-    text.innerHTML = '✅ <span>Syncing to Google Sheets</span> — every session saves automatically';
+    text.innerHTML = '✅ <span>Syncing to Google Sheets</span> — data loads from your sheet on every visit';
     btn.textContent = 'Change';
   } else {
     banner.classList.remove('connected');
@@ -726,6 +521,7 @@ function updateBanner() {
   }
 }
 
+// ── Modal ─────────────────────────────────────────────────
 function openModal() {
   document.getElementById('modal').classList.add('open');
   if (sheetsUrl) document.getElementById('sheets-url-input').value = sheetsUrl;
@@ -735,8 +531,7 @@ document.getElementById('modal').addEventListener('click', e => { if (e.target =
 
 function copyScript() {
   navigator.clipboard.writeText(document.getElementById('script-code').textContent).then(() => {
-    const btn = event.target;
-    const orig = btn.textContent;
+    const btn = event.target; const orig = btn.textContent;
     btn.textContent = '✓ Copied!';
     setTimeout(() => btn.textContent = orig, 2000);
   });
@@ -746,33 +541,82 @@ async function saveSheetUrl() {
   const val = document.getElementById('sheets-url-input').value.trim();
   if (!val || !val.includes('script.google.com')) { alert('Please paste a valid Google Apps Script Web App URL'); return; }
   sheetsUrl = val;
-  try { await window.storage.set(SHEETS_KEY, sheetsUrl); } catch(e) {}
+  await saveUrl();
   updateBanner();
   closeModal();
-  setSyncStatus('synced', '✅ Connected to Google Sheets');
-  setTimeout(() => setSyncStatus('', ''), 3000);
+  // Load data immediately
+  await fetchFromSheets();
 }
 
-function showView(v, btn) {
+// ── Fetch from Sheets ─────────────────────────────────────
+async function fetchFromSheets() {
+  if (!sheetsUrl) return false;
+  try {
+    const res = await fetch(sheetsUrl, { method: 'GET', mode: 'cors' });
+    const data = await res.json();
+    if (data.entries) {
+      entries = data.entries;
+      return true;
+    }
+  } catch(e) {
+    console.warn('Could not fetch from Sheets:', e);
+  }
+  return false;
+}
+
+// ── Nav ───────────────────────────────────────────────────
+async function showView(v, btn) {
   document.querySelectorAll('.view').forEach(el => el.classList.remove('active'));
   document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
   document.getElementById('view-' + v).classList.add('active');
   if (btn) btn.classList.add('active');
-  if (v === 'table') renderTable();
-  if (v === 'charts') renderCharts();
+  if (v === 'table') { await loadAndRender('table'); }
+  if (v === 'charts') { await loadAndRender('charts'); }
 }
 
+async function loadAndRender(view) {
+  if (sheetsUrl) {
+    showLoading(view);
+    await fetchFromSheets();
+  }
+  if (view === 'table') renderTable();
+  if (view === 'charts') renderCharts();
+}
+
+async function refreshData(view) {
+  if (!sheetsUrl) {
+    alert('Connect to Google Sheets first using the banner at the top.');
+    return;
+  }
+  showLoading(view);
+  const ok = await fetchFromSheets();
+  if (view === 'table') renderTable();
+  if (view === 'charts') renderCharts();
+}
+
+function showLoading(view) {
+  if (view === 'table') {
+    document.getElementById('table-container').innerHTML = `<div class="loading-state"><div class="spinner"></div><p>Loading from Google Sheets…</p></div>`;
+  }
+}
+
+// ── Sync status ───────────────────────────────────────────
 function setSyncStatus(type, msg) {
   const el = document.getElementById('sync-status');
   el.className = 'sync-indicator' + (type ? ' ' + type : '');
   el.innerHTML = msg ? `<div class="dot${type==='syncing'?' pulse':''}"></div>${msg}` : '';
 }
 
+// ── Form submit ───────────────────────────────────────────
 document.getElementById('kitForm').addEventListener('submit', async (e) => {
   e.preventDefault();
+  if (!sheetsUrl) {
+    alert('Please connect to Google Sheets first using the banner at the top.');
+    return;
+  }
   const r = n => { const el = document.querySelector(`input[name="${n}"]:checked`); return el ? el.value : ''; };
   const entry = {
-    id: Date.now(),
+    id: Date.now().toString(),
     date: document.getElementById('f-date').value,
     venue: document.getElementById('f-venue').value,
     hours: document.getElementById('f-hours').value,
@@ -788,25 +632,28 @@ document.getElementById('kitForm').addEventListener('submit', async (e) => {
     jibwire: document.getElementById('f-jibwire').value,
     comments: document.getElementById('f-comments').value,
   };
-  entries.unshift(entry);
-  await save();
-  showToast();
-  e.target.reset();
-  document.getElementById('f-date').value = new Date().toISOString().split('T')[0];
-  document.getElementById('f-boat').value = 'The Dame';
 
-  if (sheetsUrl) {
-    setSyncStatus('syncing', 'Syncing to Google Sheets…');
-    document.getElementById('submit-btn').disabled = true;
-    try {
-      await fetch(sheetsUrl, { method:'POST', mode:'no-cors', headers:{'Content-Type':'application/json'}, body: JSON.stringify(entry) });
-      setSyncStatus('synced', '✅ Saved to Google Sheets');
-    } catch(err) {
-      setSyncStatus('error', '⚠️ Saved locally — Sheets sync failed');
-    }
-    document.getElementById('submit-btn').disabled = false;
-    setTimeout(() => setSyncStatus('',''), 4000);
+  setSyncStatus('syncing', 'Saving to Google Sheets…');
+  document.getElementById('submit-btn').disabled = true;
+
+  try {
+    await fetch(sheetsUrl, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(entry)
+    });
+    entries.unshift(entry);
+    showToast();
+    setSyncStatus('synced', '✅ Saved to Google Sheets');
+    e.target.reset();
+    document.getElementById('f-date').value = new Date().toISOString().split('T')[0];
+    document.getElementById('f-boat').value = 'The Dame';
+  } catch(err) {
+    setSyncStatus('error', '⚠️ Could not save — check your connection');
   }
+  document.getElementById('submit-btn').disabled = false;
+  setTimeout(() => setSyncStatus('', ''), 4000);
 });
 
 function showToast() {
@@ -815,33 +662,40 @@ function showToast() {
   setTimeout(() => t.classList.remove('show'), 2500);
 }
 
+// ── Table ─────────────────────────────────────────────────
 function renderTable() {
   const container = document.getElementById('table-container');
   if (!entries.length) {
-    container.innerHTML = `<div class="empty-state"><div class="icon">⛵</div><p>No sessions logged yet.<br>Fill in the Log tab to get started.</p></div>`;
+    container.innerHTML = sheetsUrl
+      ? `<div class="empty-state"><div class="icon">⛵</div><p>No sessions yet.<br>Fill in the Log tab to add your first session.</p></div>`
+      : `<div class="empty-state"><div class="icon">📊</div><p>Connect Google Sheets using the banner above<br>to see your sessions here.</p></div>`;
     return;
   }
-  const cols = ['Date','Venue','Hrs','Wind','Sea','Focus','Main','Jib','Kite','Boat','Board','Mast','Shrouds','Luff Wire','Jib Wire','Comments',''];
+  const cols   = ['Date','Venue','Hrs','Wind','Sea','Focus','Main','Jib','Kite','Boat','Board','Mast','Shrouds','Luff Wire','Jib Wire','Comments',''];
   const fields = ['date','venue','hours','wind','sea','focus','main','jib','kite','boat','board','mast','shrouds','luffwire','jibwire','comments'];
   let html = `<div class="table-wrap"><table><thead><tr>${cols.map(c=>`<th>${c}</th>`).join('')}</tr></thead><tbody>`;
   entries.forEach(en => {
-    html += `<tr>${fields.map(f=>`<td title="${en[f]||''}">${en[f]||'—'}</td>`).join('')}<td><button class="delete-btn" onclick="deleteEntry(${en.id})">✕</button></td></tr>`;
+    html += `<tr>${fields.map(f=>`<td title="${en[f]||''}">${en[f]||'—'}</td>`).join('')}<td><button class="delete-btn" onclick="deleteEntry('${en.id}')">✕</button></td></tr>`;
   });
   html += '</tbody></table></div>';
   container.innerHTML = html;
 }
 
 async function deleteEntry(id) {
-  if (!confirm('Delete this session?')) return;
+  if (!confirm('Delete this session from Google Sheets?')) return;
+  if (sheetsUrl) {
+    try {
+      await fetch(sheetsUrl, { method:'POST', mode:'no-cors', headers:{'Content-Type':'application/json'}, body: JSON.stringify({action:'delete', id}) });
+    } catch(e) {}
+  }
   entries = entries.filter(e => e.id !== id);
-  await save();
   renderTable();
 }
 
 function exportCSV() {
   if (!entries.length) return;
   const headers = ['Date','Venue','Hours','Wind','Sea','Focus','Main','Jib','Kite','Boat','Board','Mast','Shrouds','Luff Wire','Jib Wire','Comments'];
-  const fields = ['date','venue','hours','wind','sea','focus','main','jib','kite','boat','board','mast','shrouds','luffwire','jibwire','comments'];
+  const fields  = ['date','venue','hours','wind','sea','focus','main','jib','kite','boat','board','mast','shrouds','luffwire','jibwire','comments'];
   const rows = entries.map(e => fields.map(f => `"${(e[f]||'').toString().replace(/"/g,'""')}"`).join(','));
   const a = document.createElement('a');
   a.href = 'data:text/csv,' + encodeURIComponent([headers.join(','), ...rows].join('\n'));
@@ -849,20 +703,37 @@ function exportCSV() {
   a.click();
 }
 
+// ── Charts ────────────────────────────────────────────────
 let charts = {};
+
 function renderCharts() {
-  const totalHours = entries.reduce((s, e) => s + parseFloat(e.hours||0), 0);
+  if (!entries.length) {
+    document.getElementById('stats-row').innerHTML = `
+      <div class="stat-box"><div class="val">0</div><div class="lbl">Sessions</div></div>
+      <div class="stat-box"><div class="val">0</div><div class="lbl">Hours</div></div>
+      <div class="stat-box"><div class="val">0</div><div class="lbl">Avg Hrs</div></div>`;
+    return;
+  }
+  const totalHours = entries.reduce((s,e) => s + parseFloat(e.hours||0), 0);
   document.getElementById('stats-row').innerHTML = `
     <div class="stat-box"><div class="val">${entries.length}</div><div class="lbl">Sessions</div></div>
     <div class="stat-box"><div class="val">${totalHours.toFixed(1)}</div><div class="lbl">Hours</div></div>
-    <div class="stat-box"><div class="val">${entries.length?(totalHours/entries.length).toFixed(1):'0'}</div><div class="lbl">Avg Hrs</div></div>`;
+    <div class="stat-box"><div class="val">${(totalHours/entries.length).toFixed(1)}</div><div class="lbl">Avg Hrs</div></div>`;
+
   const defs = [
     {id:'chartHours',fn:makeHoursChart},{id:'chartWind',fn:makeWindChart},
     {id:'chartFocus',fn:makeFocusChart},{id:'chartMains',fn:makeMainsChart},
     {id:'chartJibs',fn:makeJibsChart},{id:'chartKites',fn:makeKitesChart},
     {id:'chartRigging',fn:makeRiggingChart},{id:'chartBoard',fn:makeBoardChart},
   ];
-  defs.forEach(({id,fn}) => { if (charts[id]) charts[id].destroy(); charts[id] = fn(id); });
+  defs.forEach(({id,fn}) => {
+    const el = document.getElementById(id);
+    el.style.display = '';
+    const next = el.nextElementSibling;
+    if (next && next.tagName === 'P') next.remove();
+    if (charts[id]) charts[id].destroy();
+    charts[id] = fn(id);
+  });
 }
 
 function ctxTheme() {
@@ -884,33 +755,29 @@ function makeHoursChart(id) {
   return new Chart(document.getElementById(id), {
     type:'bar',
     data:{ labels:last10.map(e=>e.date?e.date.slice(5):''), datasets:[{data:last10.map(e=>parseFloat(e.hours)||0),backgroundColor:'rgba(0,180,216,0.6)',borderColor:'#00b4d8',borderWidth:1,borderRadius:4}] },
-    options:{...ctxTheme(), plugins:{...ctxTheme().plugins,legend:{display:false}}}
+    options:{...ctxTheme(),plugins:{...ctxTheme().plugins,legend:{display:false}}}
   });
 }
-
 function makeWindChart(id) {
   const counts = countField('wind');
   const order = ['0-6kts','7-10kts','11-15kts','16-20kts','20-25kts','25+kts'];
   const labels = order.filter(k=>counts[k]);
   return new Chart(document.getElementById(id), {
     type:'doughnut',
-    data:{labels, datasets:[{data:labels.map(l=>counts[l]||0),backgroundColor:['#023e8a','#0077b6','#0096c7','#00b4d8','#48cae4','#90e0ef'],borderColor:'#0a1628',borderWidth:2}]},
+    data:{labels,datasets:[{data:labels.map(l=>counts[l]||0),backgroundColor:['#023e8a','#0077b6','#0096c7','#00b4d8','#48cae4','#90e0ef'],borderColor:'#0a1628',borderWidth:2}]},
     options:{plugins:{legend:{labels:{color:'#7fa8c0',font:{family:'Barlow Condensed',size:13}}}}}
   });
 }
-
 function makeFocusChart(id) {
-  const counts = countField('focus');
+  const counts = countField('focus'); delete counts['Unknown'];
   return new Chart(document.getElementById(id), {
     type:'pie',
     data:{labels:Object.keys(counts),datasets:[{data:Object.values(counts),backgroundColor:['#f4a261','#e76f51','#2a9d8f','#e9c46a'],borderColor:'#0a1628',borderWidth:2}]},
     options:{plugins:{legend:{labels:{color:'#7fa8c0',font:{family:'Barlow Condensed',size:13}}}}}
   });
 }
-
 function makeSailBar(id, field, color) {
-  const counts = countField(field);
-  delete counts['']; delete counts['Unknown'];
+  const counts = countField(field); delete counts['']; delete counts['Unknown'];
   const sorted = Object.entries(counts).sort((a,b)=>b[1]-a[1]);
   if (!sorted.length) {
     const el = document.getElementById(id);
@@ -924,7 +791,6 @@ function makeSailBar(id, field, color) {
     options:{...ctxTheme(),plugins:{...ctxTheme().plugins,legend:{display:false}},indexAxis:'y'}
   });
 }
-
 function makeMainsChart(id)  { return makeSailBar(id,'main','rgba(244,162,97,0.75)'); }
 function makeJibsChart(id)   { return makeSailBar(id,'jib','rgba(72,202,228,0.75)'); }
 function makeKitesChart(id)  { return makeSailBar(id,'kite','rgba(42,157,143,0.75)'); }
@@ -934,7 +800,7 @@ function makeRiggingChart(id) {
   const fields = ['mast','shrouds','luffwire','jibwire'];
   const labels = ['HD1','HD2','HD3','HD4','HD5','HD6','HD7','HD8','HD9','HD10','HD11','HD12','HD13','HD14','HD15'];
   const colors = ['rgba(0,180,216,0.8)','rgba(0,119,182,0.8)','rgba(244,162,97,0.8)','rgba(42,157,143,0.8)'];
-  const names = ['Mast','Shrouds','Luff Wire','Jib Wire'];
+  const names  = ['Mast','Shrouds','Luff Wire','Jib Wire'];
   return new Chart(document.getElementById(id), {
     type:'bar',
     data:{labels,datasets:fields.map((f,i)=>({label:names[i],data:labels.map(l=>(countField(f)[l]||0)),backgroundColor:colors[i],borderRadius:3}))},
@@ -949,8 +815,9 @@ function makeRiggingChart(id) {
   });
 }
 
+// ── Init ──────────────────────────────────────────────────
 (async () => {
-  await load();
+  await loadUrl();
   document.getElementById('f-date').value = new Date().toISOString().split('T')[0];
   document.getElementById('f-boat').value = 'The Dame';
   updateBanner();
